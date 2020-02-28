@@ -295,7 +295,7 @@ class MainApp(QtWidgets.QMainWindow, designe.Ui_MainWindow):
             outputStream = open(folder_path + '/' + file_name, "wb")
             output.write(outputStream)
             outputStream.close()
-            os.remove(folder_path + '/' + str(count) + ".pdf")
+
             count = count + 1
         self.status_label_2.setText(self.status_label_2.text() + ' Job done.')
 
